@@ -10,19 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace RurayFoodApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class MainPage : TabbedPage
     {
-        public Login()
+        public MainPage()
         {
             InitializeComponent();
-        }
-
-        private async void Button_Login(object sender, EventArgs e)
-        {
-            
-            var newPage = new MainPage();
-            await Navigation.PushAsync(newPage);
-
         }
     }
 }

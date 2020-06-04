@@ -113,7 +113,7 @@
                     </Frame>
 
 
-                    <Button Text="Ingresar" BackgroundColor="#393534" TextColor="White" CornerRadius="30" />
+                    <Button Text="Ingresar" BackgroundColor="#393534" TextColor="White" CornerRadius="30" Clicked="Button_Login"/>
 
                     <StackLayout Orientation="Horizontal">
                         <Label Text="¿Recuperar contraseña?"/>

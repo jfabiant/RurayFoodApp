@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RurayFoodApp.Views.Extrangero" Title="Extrangera" IconImageSource="https://github.com/terbas1/StarUP/blob/master/StarUp/StarUp.Android/Resources/drawable/menu.png"
+             BackgroundImageSource="https://raw.githubusercontent.com/terbas1/StarUP/master/StarUp/StarUp.Android/Resources/drawable/fondo.jpg">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start"  HorizontalOptions="Fill">
+            <SearchBar x:Name="Buscar2" Placeholder="Buscar" BackgroundColor="White" TextColor="Gray"></SearchBar>
+            <ListView ItemsSource="{Binding FoodList2}"
+                          HasUnevenRows="True"
+                          SeparatorVisibility="None"
+                          ItemTapped="ListView_ItemTapped"
+                          >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                        HeightRequest="60"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Aspect="AspectFill"
+                                        WidthRequest="66"
+                                        Grid.RowSpan="2"
+                                        Source="{Binding Image}"/>
+                                <Label Grid.Column="1"
+                                           Text="{Binding Name}"
+                                           VerticalOptions="End"/>
+                                <Label Grid.Column="2"
+                                           Grid.Row="1"
+                                           Text="{Binding Precio}"
+                                           VerticalOptions="End"/>
+                                <Label Grid.Column="1"
+                                           Grid.Row="1"
+                                           Text="{Binding DetallePrincipio}"
+                                           VerticalOptions="Start"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Hola"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

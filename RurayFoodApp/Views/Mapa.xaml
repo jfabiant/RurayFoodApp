@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RurayFoodApp.Views.EnvioConMapa">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="RurayFoodApp.Views.Mapa">
+
+    <StackLayout VerticalOptions="StartAndExpand" Padding="12">
+
+        <Maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" MapType="Street"/>
+
+    </StackLayout>
+
 </ContentPage>
