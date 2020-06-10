@@ -1,2 +1,2 @@
 # RurayFood App
-## Start Up Venture Project 
+## Start Up Venture Project & Emprendimiento 
