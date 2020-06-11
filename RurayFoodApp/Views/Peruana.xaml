@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="RurayFoodApp.Views.Peruana"
-            Title="Peruana" IconImageSource="https://raw.githubusercontent.com/terbas1/StarUP/master/StarUp/StarUp.Android/Resources/drawable/comida.png" 
+             IconImageSource="platocontenedor.png" 
              BackgroundImageSource="https://raw.githubusercontent.com/terbas1/StarUP/master/StarUp/StarUp.Android/Resources/drawable/fondo.jpg">
     <ContentPage.Content >
         <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">

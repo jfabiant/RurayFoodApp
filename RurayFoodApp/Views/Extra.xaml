@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RurayFoodApp.Views.Extra" Title="Extras" IconImageSource="https://raw.githubusercontent.com/terbas1/StarUP/master/StarUp/StarUp.Android/Resources/drawable/extras.png" 
+             x:Class="RurayFoodApp.Views.Extra"  IconImageSource="cupcake.png" 
              BackgroundImageSource="https://raw.githubusercontent.com/terbas1/StarUP/master/StarUp/StarUp.Android/Resources/drawable/fondo.jpg">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Start"  HorizontalOptions="Fill">

@@ -108,22 +108,31 @@
     <AndroidResource Include="Resources\drawable\google.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\menu.png" />
+    <AndroidResource Include="Resources\drawable\fondo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tasa.png" />
+    <AndroidResource Include="Resources\drawable\platocontenedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sopa.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\comida.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\extras.png" />
+    <AndroidResource Include="Resources\drawable\pizza.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fastfood.png" />
+    <AndroidResource Include="Resources\drawable\piocolor.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fondo.jpg" />
+    <AndroidResource Include="Resources\drawable\hambuerguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cupcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tenedor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
