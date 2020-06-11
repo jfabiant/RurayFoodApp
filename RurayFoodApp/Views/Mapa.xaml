@@ -25,12 +25,12 @@
                 </Grid.ColumnDefinitions>
                 <StackLayout Padding="5,10" >
                     <Label Text="Enviar una nota:" FontSize="20"/>
-                    <StackLayout Grid.Row="1" BackgroundColor="#ffff89" >
+                    <StackLayout Grid.Row="1" BackgroundColor="#eeff41" >
                         <Editor HeightRequest="100" VerticalOptions="FillAndExpand"
                                 TextColor="Black" >
                         </Editor>
                     </StackLayout>
-                    <Button Text="Enviar nota" 
+                    <Button Text="Ir a pagar" 
                             BackgroundColor="#393534" TextColor="White" 
                             CornerRadius="30" />
                 </StackLayout>
