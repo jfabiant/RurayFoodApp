@@ -11,6 +11,7 @@
             <Image x:Name="FoodImage" WidthRequest="100" HeightRequest="100"/>
             <Label x:Name="FoodIngredientes" Margin="20,20" FontSize="Medium"/>
             <Label x:Name="FoodDetalleSegundo" Margin="20,20" FontSize="Small"/>
+            <Button Clicked="HacerPedido_Clicked" Text="Siguiente"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
