@@ -8,8 +8,36 @@
              x:Class="RurayFoodApp.Views.Mapa">
 
     <StackLayout VerticalOptions="StartAndExpand" Padding="12">
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--<Image Source="https://raw.githubusercontent.com/devcrux/WeatherApp/master/WeatherApp/WeatherApp.Android/Resources/drawable/overlay.png" 
+                   Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>-->
 
-        <Maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" MapType="Street"/>
+            <Maps:Map HeightRequest="350" VerticalOptions="StartAndExpand" x:Name="MyMap" MapType="Street"/>
+            <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Padding="5,10" >
+                    <Label Text="Enviar una nota:" FontSize="20"/>
+                    <StackLayout Grid.Row="1" BackgroundColor="#ffff89" >
+                        <Editor HeightRequest="100" VerticalOptions="FillAndExpand"
+                                TextColor="Black" >
+                        </Editor>
+                    </StackLayout>
+                    <Button Text="Enviar nota" 
+                            BackgroundColor="#393534" TextColor="White" 
+                            CornerRadius="30" />
+                </StackLayout>
+            </Grid>
+
+
+        </Grid>
 
     </StackLayout>
 

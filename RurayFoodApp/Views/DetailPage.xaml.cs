@@ -26,5 +26,11 @@ namespace RurayFoodApp.Views
                 Uri = new Uri(Image)
             };
         }
+
+        private async void HacerPedido_Clicked(object sender, EventArgs e)
+        {
+            var newPage = new Mapa();
+            await Navigation.PushAsync(newPage);
+        }
     }
 }

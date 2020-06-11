@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:RurayFoodApp.CustomRenderer"
+             NavigationPage.HasNavigationBar="false"
              x:Class="RurayFoodApp.Views.Login" > 
 
     <!--<StackLayout BackgroundColor="#fafafa">
