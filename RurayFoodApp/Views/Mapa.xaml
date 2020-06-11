@@ -4,10 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="Selecciona un proveedor"
+             BackgroundColor="#333"
              xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:RurayFoodApp.CustomRenderer"
              x:Class="RurayFoodApp.Views.Mapa">
 
-    <StackLayout VerticalOptions="StartAndExpand" Padding="12">
+    <ScrollView VerticalOptions="StartAndExpand" Padding="12">
         <Grid VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -24,21 +27,20 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackLayout Padding="5,10" >
-                    <Label Text="Enviar una nota:" FontSize="20"/>
-                    <StackLayout Grid.Row="1" BackgroundColor="#eeff41" >
-                        <Editor HeightRequest="100" VerticalOptions="FillAndExpand"
+                    <Label Text="Nota:" TextColor="#ffffff"/>
+                    <StackLayout BackgroundColor="#eeff41" Padding="10" Margin="0,0,0,10">
+                        <local:CustomEditor HeightRequest="100" VerticalOptions="FillAndExpand"
                                 TextColor="Black" >
-                        </Editor>
+                        </local:CustomEditor>
                     </StackLayout>
                     <Button Text="Ir a pagar" 
-                            BackgroundColor="#393534" TextColor="White" 
+                            BackgroundColor="#e93e21" TextColor="White" 
                             CornerRadius="30" />
                 </StackLayout>
             </Grid>
 
-
         </Grid>
 
-    </StackLayout>
+    </ScrollView>
 
 </ContentPage>

@@ -8,81 +8,10 @@
              NavigationPage.HasNavigationBar="false"
              x:Class="RurayFoodApp.Views.Login" > 
 
-    <!--<StackLayout BackgroundColor="#fafafa">
-        <Grid>
-            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
-                <Frame HeightRequest="150" BackgroundColor="HotPink" Padding="0" Margin="0">
-                    <Image Source="wallpaper.jpg" Aspect="AspectFill" Margin="0"/>
-                </Frame>
-            </StackLayout>
-            <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
-                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
-                    <StackLayout>
-                        <StackLayout Margin="10">
-                            --><!--<Label Text="RurayFood.com" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>--><!--
-                            <Image Source="logo.png" WidthRequest="100"/>
-                        </StackLayout>
-
-                        <StackLayout Padding="0" Margin="15,10" >
-
-                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                                <StackLayout Orientation="Horizontal">
-                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                        <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
-                                    </Frame>
-                                    <local:CustomEntry Placeholder="Email" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
-                                </StackLayout>
-                            </Frame>
-
-                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,10" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                                <StackLayout Orientation="Horizontal">
-                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                        <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
-                                    </Frame>
-
-                                    <local:CustomEntry Placeholder="Contraseña" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
-                                </StackLayout>
-                            </Frame>
-
-                            <Button Text="Ingresar" BackgroundColor="#5a9216" TextColor="White" CornerRadius="30" />
-                            
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Aun no tiene cuenta?" TextColor="DarkGray" FontSize="Small"/>
-                                <Label Text="Registrarme" TextColor="HotPink" FontAttributes="Bold" FontSize="Small"/>
-                            </StackLayout>
-
-                            <StackLayout Margin="0,25,0,0" Padding="0">
-                                <Grid>
-                                    <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="150"  HorizontalOptions="Center" VerticalOptions="Center"/>
-                                    <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="45" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
-                                        <Label Text="O" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                                    </Frame>
-                                </Grid>
-                            </StackLayout>
-
-                            <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="45" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
-                                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
-                                <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="45" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
-                                    <Image Source="https://reset-si.es/wp-content/uploads/2018/12/google-plus-940316_1280-300x293.png" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
-                            </StackLayout>
-
-                        </StackLayout>
-
-
-                    </StackLayout>
-
-                </Frame>
-            </StackLayout>
-        </Grid>
-    </StackLayout>-->
-
     <ContentPage.Content>
 
         <Grid>
-            <BoxView BackgroundColor="AliceBlue" />
+            <BoxView BackgroundColor="#333" />
             <Grid>
 
                 <Grid.RowDefinitions>
@@ -99,7 +28,7 @@
                             <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                 <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
                             </Frame>
-                            <local:CustomEntry Placeholder="Email" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            <local:CustomEntry PlaceholderColor="#ffffff" Placeholder="Email" TextColor="#ffffff" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                         </StackLayout>
                     </Frame>
 
@@ -109,21 +38,22 @@
                                 <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
                             </Frame>
 
-                            <local:CustomEntry Placeholder="Contraseña" IsPassword="True" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            <local:CustomEntry PlaceholderColor="#ffffff" Placeholder="Contraseña" IsPassword="True" TextColor="#ffffff" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                         </StackLayout>
                     </Frame>
 
 
-                    <Button Text="Ingresar" BackgroundColor="#393534" TextColor="White" CornerRadius="30" Clicked="Button_Login"/>
+                    <Button Text="Ingresar" BackgroundColor="#e93e21" TextColor="White" CornerRadius="30" Clicked="Button_Login"/>
 
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="¿Recuperar contraseña?"/>
-                        <Label Text="Registrarme" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                        <Label Text="¿Recuperar contraseña?" TextColor="#ffffff"/>
+                        <Label Text="Registrarme" HorizontalOptions="EndAndExpand" 
+                               TextColor="#ffffff" FontAttributes="Bold"/>
                     </StackLayout>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,20">
-                    <Label Text="Iniciar sesión con" HorizontalOptions="Center"/>
+                    <Label Text="Iniciar sesión con" HorizontalOptions="Center" TextColor="#ffffff"/>
                     <StackLayout Orientation="Horizontal">
                         <Image Grid.Row="0" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png" WidthRequest="40" HeightRequest="40"/>
                         <Image Grid.Row="0" Source="https://reset-si.es/wp-content/uploads/2018/12/google-plus-940316_1280-300x293.png" WidthRequest="40" HeightRequest="40"/>
