@@ -23,41 +23,16 @@ namespace RurayFoodApp.Views
             MyMap.MoveToRegion(
                 Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius(
                     new Xamarin.Forms.Maps.Position(-12.019185, -76.886437), Distance.FromKilometers(300)));
-
-            GetGeolocation();
+            //MyMap.Pins({ Position()});
 
             this.BindingContext = this;
 
         }
 
-        public async void GetGeolocation()
+        private void Button_GoToPay(object sender, EventArgs e)
         {
-            try
-            {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-                if (location != null)
-                {
-                    System.Console.WriteLine("### GEOLOCALITATION ###");
-                    System.Console.WriteLine(location.Latitude.ToString());
-                    System.Console.WriteLine(location.Longitude.ToString());
-                    System.Console.WriteLine(location.Altitude.ToString());
 
-                }
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Handle not supported on device exception  
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception  
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location  
-            }
         }
-
     }
 
 
