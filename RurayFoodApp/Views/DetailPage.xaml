@@ -4,14 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RurayFoodApp.Views.DetailPage">
+             x:Class="RurayFoodApp.Views.DetailPage"
+            BackgroundColor="Black"
+             Title="RurayFoodApp">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout HorizontalOptions="Center">
-            <Label x:Name="FoodName" HorizontalTextAlignment="Center"/>
-            <Image x:Name="FoodImage" WidthRequest="100" HeightRequest="100"/>
-            <Label x:Name="FoodIngredientes" Margin="20,20" FontSize="Medium"/>
-            <Label x:Name="FoodDetalleSegundo" Margin="20,20" FontSize="Small"/>
-            <Button Clicked="HacerPedido_Clicked" Text="Siguiente"/>
+            <Label x:Name="FoodName" HorizontalTextAlignment="Center"  TextColor="White" FontSize="Title"/>
+            <Image x:Name="FoodImage" WidthRequest="100" HeightRequest="100" />
+            <Label Text="Ingredientes:" TextColor="White" FontSize="Subtitle" Margin="20,0"/>
+            <Label x:Name="FoodPrincipio"  Margin="20,0" FontSize="Small" TextColor="White" />
+                <Label Text="Instruciones:" TextColor="White" FontSize="Subtitle" Margin="20,0"/>
+            <Label x:Name="FoodIngredientes" Margin="20,0" FontSize="Small"  TextColor="White"/>
+                <Label Text="Precio:" TextColor="White" FontSize="Subtitle" Margin="20,0"/>
+                <Label x:Name="FoodPrecio" Margin="20,0" FontSize="Small"  TextColor="Red"/>
+            <Button Clicked="HacerPedido_Clicked" Text="Siguiente" />
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
