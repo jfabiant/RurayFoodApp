@@ -18,7 +18,8 @@
             <Label x:Name="FoodIngredientes" Margin="20,0" FontSize="Small"  TextColor="White"/>
                 <Label Text="Precio:" TextColor="White" FontSize="Subtitle" Margin="20,0"/>
                 <Label x:Name="FoodPrecio" Margin="20,0" FontSize="Small"  TextColor="Red"/>
-            <Button Clicked="HacerPedido_Clicked" Text="Siguiente" />
+                <Button Clicked="HacerPedido_Clicked" Text="Siguiente" BackgroundColor="#e93e21" TextColor="White" 
+                            CornerRadius="30" />
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>
