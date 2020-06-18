@@ -12,6 +12,8 @@ namespace RurayFoodApp
             InitializeComponent();
 
             MainPage = new NavigationPage(new Login());
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("333");
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.FromHex("fff");
         }
 
         protected override void OnStart()
