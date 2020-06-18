@@ -52,12 +52,13 @@ namespace RurayFoodApp.Views
 
         }
 
-        private void Button_GoToPay(object sender, EventArgs e)
+        private async void Button_GoToPay(object sender, EventArgs e)
         {
             //var myValue = Preferences.Get("user_location_latitude", "default_value");
             //DisplayAlert("Information", $"The data saved is {myValue}", "ACEPTAR");
 
-
+            var newPage = new CreditCardPay();
+            await Navigation.PushAsync(newPage);
 
         }
     

@@ -59,6 +59,9 @@
     <PackageReference Include="Xamarin.Forms.Maps">
       <Version>4.6.0.800</Version>
     </PackageReference>
+    <PackageReference Include="XamarinFastEntry.Behaviors">
+      <Version>1.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
