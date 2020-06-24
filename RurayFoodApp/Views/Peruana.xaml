@@ -11,7 +11,7 @@
         
     </ContentPage.Resources>
     <ContentPage.Content >
-        <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" >
             <SearchBar x:Name="Buscar1" Placeholder="Buscar" BackgroundColor="White" TextColor="Gray"></SearchBar>
              <ListView ItemsSource="{Binding FoodList}"
                           HasUnevenRows="True"
@@ -19,7 +19,7 @@
                           ItemTapped="ListView_ItemTapped"
                           >
                 <ListView.ItemTemplate>
-                    <DataTemplate >
+                    <DataTemplate  >
                         <ViewCell >
                             <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
                                 <Grid.RowDefinitions>

@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Start"  HorizontalOptions="Fill">
             <SearchBar x:Name="Buscar3" Placeholder="Buscar" BackgroundColor="White" TextColor="Gray"></SearchBar>
-            <ListView ItemsSource="{Binding FoodList3}"
+            <ListView ItemsSource="{Binding FoodList}"
                           HasUnevenRows="True"
                           SeparatorVisibility="None"
                           ItemTapped="ListView_ItemTapped"
@@ -39,11 +39,6 @@
                                            Text="{Binding Name}"
                                            VerticalOptions="End"
                                        TextColor="White"/>
-                                <Label Grid.Column="2"
-                                           Grid.Row="1"
-                                           Text="{Binding Precio}"
-                                           VerticalOptions="End"
-                                       TextColor="Red"/>
                                 <Label Grid.Column="1"
                                            Grid.Row="1"
                                            Text="{Binding DetallePrincipio}"

@@ -21,7 +21,6 @@ namespace RurayFoodApp.Views
             InitializeComponent();
 
             FoodName.Text = Name;
-            FoodIngredientes.Text = Ingredientes; 
             FoodPrecio.Text = Precio;
             FoodPrincipio.Text = DetallePrincipio;
             FoodImage.Source = new UriImageSource()

@@ -17,13 +17,13 @@ namespace RurayFoodApp.Views
         public Extra()
         {
             InitializeComponent();
-            BindingContext = new MyListViewModel3();
+            BindingContext = new MyListViewModel();
         }
 
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var mydetail = e.Item as OrdenDeComida;
-            await Navigation.PushAsync(new DetailPage(mydetail.Name, mydetail.Image, mydetail.Precio, mydetail.Ingredientes, mydetail.DetallePrincipio, mydetail.DetalleSegunda));
+            await Navigation.PushAsync(new Detalles(mydetail.Name, mydetail.Image, mydetail.Precio, mydetail.Ingredientes, mydetail.DetallePrincipio, mydetail.DetalleSegunda));
 
         }
     }
