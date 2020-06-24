@@ -112,7 +112,7 @@
                          Grid.Row="3"
                          Grid.Column="0"/>
 
-            <Label Text="Remember me"
+            <Label Text="Recordarme"
                        TextColor="{StaticResource PrimaryDark}"
                        FontSize="16"
                        VerticalOptions="Center"
@@ -142,7 +142,7 @@
                          Grid.Column="0"
                          Grid.ColumnSpan="3"/>
 
-            <Button Text="Purchase for $200"
+            <Button Text="Comprar"
                          BackgroundColor="{Binding CardNumber, Converter={StaticResource CardColorConverter}}"
                          CornerRadius="26"
                          FontSize="18"
